@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng ngày Phụ nữ!</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<style>
+    #loveLetter {
+        white-space: pre-line; /* Duy trì các dòng xuống dòng trong nội dung */
+    }
+</style>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="hi2.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ thẻ video.
+    </video>
+    <div class="container">
+        <canvas id="hearts"></canvas>
+        <div class="heart"></div>
+        <div class="heart-container">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <!-- Thêm nhiều phần tử heart ở đây nếu cần -->
+        </div>
+        <div id="letter" class="content-container">
+            <div id="loveLetter" class="hidden">
+        ----------- HỒ CHÍ MINH ,ngày 8 tháng 3 nắm 2024--
+
+          Gửi mẹ,      
+          Một mùa hoa nở rộ, tràn đầy sắc thắm,
+          Là ngày mùng tám, tặng mẹ trái tim.
+          Mẹ ơi, người phụ nữ thật đặc biệt,
+          Luôn âm thầm, yêu thương vô ngần.
+          
+          Nụ cười mẹ tỏa sáng, như ánh dương ban mai,
+          Đẹp tựa bức tranh, tô điểm cuộc đời con.
+          Hạnh phúc là khi có mẹ bên cạnh,
+          Dẫu giông bão, mẹ vẫn nguyện đưa con vượt qua.
+          
+          Mẹ ơi, từng bước con đi trên con đường,
+          Là nhờ có mẹ, bên cạnh từng bước chân.
+          Ngày mùng tám này, con dành tặng mẹ,
+          Những lời yêu thương, trọn vẹn từ tâm hồn.
+          ---------------------------Người gửi------------
+          ................Thằng con trai đáo để của mẹ.... 
+          ........................NGUYỄN KIM BÌNH.........                  
+            </div>
+            <div id="hiThereText" class="hidden">Hé lu mẹ, mẹ có 1 bức thư chưa đọc nhé !</div>
+            <img id="letterImage" src="heart_letter.png" alt="Heart Letter">
+            <button id="openLetterButton" class="hidden">Mở lá thư</button>
+            <div id="message" class="hidden">
+                <!-- Nội dung chào mừng sẽ được hiển thị ở đây -->
+            </div>
+            <div id="goodbyeMessage" class="hidden">
+                <h1>Chúc mẹ ngày 8/3 tràn đầy hạnh phúc</h1>
+            </div>  
+            <div id="container">
+                <!-- Hình ảnh của Bình -->
+                <img id="binhImage" src="binh.jpg" alt="Bình" width="200">
+                
+                <!-- Nội dung bức thư -->
+                
+            </div>         
+        </div>
+        <div id="heartOverlay"></div>
+        <div id="loveLetterContainer" class="hidden">
+            <div id="loveLetter"></div>
+        </div>
+        
+    </div>
+    <audio id="backgroundMusic" src="music.mp3" loop></audio>
+    <audio id="loveSound" src="music.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
